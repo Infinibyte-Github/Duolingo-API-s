@@ -7,12 +7,22 @@ class ShortAPI:
 		self.data = requests.get(self.URL.format(username=self.username))
 		self.data_json = self.data.json()['users'][0]
 		self.courses = self.Courses(self.data_json)
-		
-	def total_xp(self):
-		return self.data_json['totalXp']
+	
+	def userid(self):
+		return self.data_json['id']
 
 	def total_crowns(self):
 		return sum([course['crowns'] for course in self.data_json['courses']])
+
+	def profile_country(self):
+		return self.data_json['profileCountry']
+
+	def has_plus(self):
+		return self.data_json['hasPlus']
+
+	def total_xp(self):
+		return self.data_json['totalXp']
+	
 
 	class Courses:
 		def __init__(self, data_json):
@@ -26,6 +36,9 @@ class ShortAPI:
 
 		def list_with_id(self):
 			return [(course['title'], course['id']) for course in self.data_json['courses']]
+
+		def list_raw(self):
+			return self.data_json['courses']
 
 		def course_crowns(self, id):
 			return self.data_json['courses'][self.list().index(id)]['crowns']
