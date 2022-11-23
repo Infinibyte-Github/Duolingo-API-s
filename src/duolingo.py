@@ -8,6 +8,15 @@ class ShortAPI:
 		self.data_json = self.data.json()['users'][0]
 		self.courses = self.Courses(self.data_json)
 	
+	def streak(self):
+		return self.data_json['streak']
+
+	def avatar_small(self):
+		return "https:"+self.data_json['picture']+"/large"
+
+	def avatar_large(self):
+		return "https:"+self.data_json['picture']+"/xxlarge"
+
 	def userid(self):
 		return self.data_json['id']
 
@@ -19,6 +28,9 @@ class ShortAPI:
 
 	def has_plus(self):
 		return self.data_json['hasPlus']
+
+	def name(self):
+		return self.data_json['name']
 
 	def total_xp(self):
 		return self.data_json['totalXp']
