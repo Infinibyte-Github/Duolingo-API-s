@@ -1,0 +1,12 @@
+Login:
+-Details on active language
+-Last streak
+
+No login:
+-Crowns
+-All languages + from which base language
+-Country
+-TotalXp
+
+Both:
+-streak

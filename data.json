@@ -1,0 +1,49 @@
+{
+    "users": [
+        {
+            "joinedClassroomIds": [],
+            "streak": 6,
+            "motivation": "none",
+            "acquisitionSurveyReason": "none",
+            "shouldForceConnectPhoneNumber": false,
+            "picture": "//simg-ssl.duolingo.com/avatars/221019149/YyRMgWApO9",
+            "learningLanguage": "en",
+            "hasFacebookId": false,
+            "shakeToReportEnabled": null,
+            "liveOpsFeatures": [],
+            "canUseModerationTools": false,
+            "id": 221019149,
+            "betaStatus": "INELIGIBLE",
+            "hasGoogleId": false,
+            "privacySettings": ["DISABLE_PERSONALIZED_ADS", "DISABLE_THIRD_PARTY_TRACKING", "DISABLE_ADS_AND_TRACKING_CONSENT"],
+            "fromLanguage": "nl-NL",
+            "hasRecentActivity15": false,
+            "_achievements": [],
+            "observedClassroomIds": [1994875],
+            "username": "Infinibyte",
+            "bio": "",
+            "profileCountry": "BE",
+            "globalAmbassadorStatus": {},
+            "currentCourseId": "DUOLINGO_EN_NL-NL",
+            "hasPhoneNumber": true,
+            "creationDate": 1475680515,
+            "achievements": [],
+            "hasPlus": false,
+            "name": "Bart",
+            "roles": ["users"],
+            "classroomLeaderboardsEnabled": false,
+            "emailVerified": true,
+            "courses": [
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "English", "learningLanguage": "en", "xp": 12565, "healthEnabled": true, "fromLanguage": "nl-NL", "crowns": 109, "id": "DUOLINGO_EN_NL-NL" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "Spanish", "learningLanguage": "es", "xp": 1079, "healthEnabled": true, "fromLanguage": "en", "crowns": 12, "id": "DUOLINGO_ES_EN" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "Dutch", "learningLanguage": "nl-NL", "xp": 524, "healthEnabled": true, "fromLanguage": "en", "crowns": 29, "id": "DUOLINGO_NL-NL_EN" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "Portuguese", "learningLanguage": "pt", "xp": 18, "healthEnabled": true, "fromLanguage": "en", "crowns": 0, "id": "DUOLINGO_PT_EN" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "French", "learningLanguage": "fr", "xp": 3856, "healthEnabled": true, "fromLanguage": "nl-NL", "crowns": 31, "id": "DUOLINGO_FR_NL-NL" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "German", "learningLanguage": "de", "xp": 5382, "healthEnabled": true, "fromLanguage": "nl-NL", "crowns": 32, "id": "DUOLINGO_DE_NL-NL" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "French", "learningLanguage": "fr", "xp": 35, "healthEnabled": true, "fromLanguage": "en", "crowns": 0, "id": "DUOLINGO_FR_EN" },
+                { "preload": false, "placementTestAvailable": false, "authorId": "duolingo", "title": "German", "learningLanguage": "de", "xp": 148, "healthEnabled": true, "fromLanguage": "en", "crowns": 1, "id": "DUOLINGO_DE_EN" }
+            ],
+            "totalXp": 23607
+        }
+    ]
+}
