@@ -64,9 +64,22 @@ class ShortAPI:
 			self.data_json = data_json
 
 		def title(self):
-			return self.data_json['languageData']['title']
+			return self.data_json['title']
 
+		def learning_language(self):
+			return self.data_json['learningLanguage']
+
+		def xp(self):
+			return self.data_json['xp']
+
+		def from_language(self):
+			return self.data_json['fromLanguage']
 		
+		def crowns(self):
+			return self.data_json['crowns']
+
+		def id(self):
+			return self.data_json['id']
 
 # class FullAPI:
 # 	def __init__(self, username, DummyUsername, DummyPassword):
