@@ -7,6 +7,7 @@ class ShortAPI:
 		self.data = requests.get(self.URL.format(username=self.username))
 		self.data_json = self.data.json()['users'][0]
 		self.courses = self.Courses(self.data_json)
+		self.activelanguage = self.ActiveLanguage(self.data_json['courses'][0])
 	
 	def streak(self):
 		return self.data_json['streak']
@@ -55,20 +56,32 @@ class ShortAPI:
 		def course_crowns(self, id):
 			return self.data_json['courses'][self.list().index(id)]['crowns']
 
-class FullAPI:
-	def __init__(self, username, DummyUsername, DummyPassword):
-		with requests.Session() as s:
-			LOGINURL = "https://www.duolingo.com/login?login={username}&password={password}"
-			login = s.get(LOGINURL.format(username=DummyUsername, password=DummyPassword))
+		def number_of_courses(self):
+			return len(self.list())
 
-			try:
-				test = login.json()["failure"]
-				raise Exception("Login failed. Check your username and password.")
-			except KeyError:
-				pass
+	class ActiveLanguage:
+		def __init__(self, data_json):
+			self.data_json = data_json
 
-			URL = "https://www.duolingo.com/users/{username}"
-			self.data = s.get(URL.format(username=username))
+		def title(self):
+			return self.data_json['languageData']['title']
+
+		
+
+# class FullAPI:
+# 	def __init__(self, username, DummyUsername, DummyPassword):
+# 		with requests.Session() as s:
+# 			LOGINURL = "https://www.duolingo.com/login?login={username}&password={password}"
+# 			login = s.get(LOGINURL.format(username=DummyUsername, password=DummyPassword))
+
+# 			try:
+# 				test = login.json()["failure"]
+# 				raise Exception("Login failed. Check your username and password.")
+# 			except KeyError:
+# 				pass
+
+# 			URL = "https://www.duolingo.com/users/{username}"
+# 			self.data = s.get(URL.format(username=username))
 
 	# class ActiveLanguage:
 	# 	def __init__(self, active_language):
